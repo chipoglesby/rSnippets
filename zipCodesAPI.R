@@ -13,7 +13,6 @@ zipcodeQueryResults <- function(
     url <- paste("https://www.zipcodeapi.com/rest/", apiKey, "/radius.json/",
     zipCode, "/", radius, "/mile", sep = "")
     zipResults <- as.data.frame(fromJSON(url), col.names = "")
-    zip <- columns
     query_exec(paste(
        "SELECT ", columns, " FROM [table.dataSet] WHERE
        regexp_match(left(postalCode, 2), \"",
