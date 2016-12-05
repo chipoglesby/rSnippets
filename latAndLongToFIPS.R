@@ -1,3 +1,6 @@
+# Credit:
+# https://gist.github.com/ramhiser/f09a71d96a4dec80994c
+
 # FCC's Census Block Conversions API
 # http://www.fcc.gov/developers/census-block-conversions-api
 latlong2fips <- function(latitude, longitude) {
