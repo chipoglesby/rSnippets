@@ -2,13 +2,7 @@ library(jsonlite)
 library(stringr)
 library(bigrquery)
 
-zipcodeQueryResults <- function(
-  zipCode = NULL,
-  radius = NULL,
-  apiKey = NULL,
-  columns = NULL,
-  project = NULL
-){
+zipcodeQueryResults <- function(zipCode, radius, apiKey, columns, project){
   if (!is.null(apiKey)) {
     url <- paste("https://www.zipcodeapi.com/rest/", apiKey, "/radius.json/",
     zipCode, "/", radius, "/mile", sep = "")
