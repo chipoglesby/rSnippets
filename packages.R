@@ -233,7 +233,8 @@ install.packages(c('tidyverse',
                    'ChannelAttribution',
                    'markovchain',
                    'visNetwork',
-                   'expm'))
+                   'expm',
+                   'robustbase'))
 
 devtools::install_github(c('Bart6114/dimple',
                            'karthik/wesanderson',
@@ -243,7 +244,6 @@ devtools::install_github(c('Bart6114/dimple',
                            'google/CausalImpact',
                            'seth/RSQLite.extfuns',
                            'sinhrks/ggfortify',
-                           'rstudio/shinyapps',
                            'ramhiser/activelearning',
                            'ropensci/testdat',
                            'wesm/feather/R',
